@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ajit0211-deploy
+  name: lalmon149-deploy
   labels:
     app: lalmon149-mvn-app
 spec:
@@ -15,15 +15,15 @@ spec:
         app: lalmon149-mvn-app
     spec:
       containers:
-      - name: ajit0211-mvn-container
-        image: ajit0211eta/ajit0211devops:v1.0
+      - name: lalmon149-mvn-container
+        image: lalmon149eta/ajit0211devops:v1.0
         ports:
         - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: ajit0211-np-service
+  name: lalmon149-np-service
   labels:
     app: lalmon149-mvn-app
 spec:

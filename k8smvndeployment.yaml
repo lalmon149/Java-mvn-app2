@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: ajit0211-deploy
   labels:
-    app: ajit0211-mvn-app
+    app: lalmon149-mvn-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: ajit0211-mvn-app
+      app: lalmon149-mvn-app
   template:
     metadata:
       labels:
-        app: ajit0211-mvn-app
+        app: lalmon149-mvn-app
     spec:
       containers:
       - name: ajit0211-mvn-container
@@ -25,10 +25,10 @@ kind: Service
 metadata:
   name: ajit0211-np-service
   labels:
-    app: ajit0211-mvn-app
+    app: lalmon149-mvn-app
 spec:
   selector:
-    app: ajit0211-mvn-app
+    app: lalmon149-mvn-app
 
   type: NodePort
   ports:
